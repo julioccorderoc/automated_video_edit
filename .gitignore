@@ -10,10 +10,14 @@ wheels/
 .venv
 
 # files
+Bundles/
+build/
+dist/
+output/
 videos/
 images/
 ffprobe.exe
 ffmpeg.exe
 ffplay.exe
-output/
-output_moviepy.mp4
+VideoBranderTool.spec
+app_icon.ico

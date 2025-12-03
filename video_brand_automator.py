@@ -55,6 +55,10 @@ import time
 from datetime import timedelta
 from typing import Union, Tuple, Optional, Dict
 
+
+from moviepy import VideoFileClip, ImageClip, CompositeVideoClip, vfx
+
+
 # ---------------------------------------------------------------------------
 # CONFIGURATION & LOGGING
 # ---------------------------------------------------------------------------
@@ -64,16 +68,6 @@ logging.basicConfig(
     datefmt="%H:%M:%S",
 )
 logger = logging.getLogger("VideoAutomator")
-
-# ---------------------------------------------------------------------------
-# DEPENDENCY CHECK
-# ---------------------------------------------------------------------------
-try:
-    from moviepy import VideoFileClip, ImageClip, CompositeVideoClip, vfx
-except ImportError:
-    logger.error("MoviePy v2.0+ is not installed.")
-    logger.error('Please run: pip install "moviepy>=2.0.0" click')
-    sys.exit(1)
 
 
 # ---------------------------------------------------------------------------

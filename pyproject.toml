@@ -8,5 +8,6 @@ dependencies = [
     "click>=8.3.1",
     "gradio>=6.0.2",
     "moviepy>=2.2.1",
+    "pyinstaller>=6.17.0",
     "pytest>=9.0.1",
 ]
